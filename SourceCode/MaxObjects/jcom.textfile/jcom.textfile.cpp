@@ -9,13 +9,22 @@
 typedef struct {
 	Object		base;
 	TTListPtr	lines;
-} JaTextfile;
+} Textfile;
+
+typedef Textfile* TextfilePtr;
 
 
 // Prototypes for methods: need a method for each incoming message type:
-void *JaTextfile_new(t_symbol *msg, long argc, t_atom *argv);
-void JaTextfile_assist(JaTextfile *x, void *b, long msg, long arg, char *dst);
-void JaTextfile_bang(JaTextfile *x);
+void*	TextfileNew(SymbolPtr msg, AtomCount ac, AtomPtr av);
+void	TextfileFree(TextfilePtr x);
+void	TextfileAssist(TextfilePtr x, void* b, long msg, long arg, char* dst);
+
+void	TextfileRead(SymbolPtr s, AtomCount ac, AtomPtr av);
+void	TextfileWrite(SymbolPtr s, AtomCount ac, AtomPtr av);
+void	TextfileOpen(TextfilePtr x);
+void	TextfileDump(TextfilePtr x);
+void	TextfileLine(TextfilePtr x, long i);
+void	TextfileNext(TextfilePtr x);
 
 
 // Class Statics
@@ -27,11 +36,18 @@ static ClassPtr	sTextfileClass;
 
 int JAMOMA_EXPORT_MAXOBJ main(void)
 {
-	ClassPtr	c = class_new("jcom.textfile",(method)JaTextfile_new, (method)NULL, sizeof(JaTextfile), (method)0L, A_GIMME, 0);
+	ClassPtr	c = class_new("jcom.textfile",(method)TextfileNew, (method)TextfileFree, sizeof(Textfile), (method)0L, A_GIMME, 0);
 	
 	common_symbols_init();
-	class_addmethod(c, (method)JaTextfile_bang,		"bang",		0L);
-    class_addmethod(c, (method)JaTextfile_assist,	"assist",	A_CANT, 0L); 
+	class_addmethod(c, (method)TextfileRead,		"read",		A_DEFER,	0);
+	class_addmethod(c, (method)TextfileWrite,		"write",	A_DEFER,	0);
+	class_addmethod(c, (method)TextfileOpen,		"open",		0);
+	class_addmethod(c, (method)TextfileDump,		"dump",		0);
+	class_addmethod(c, (method)TextfileLine,		"line",		A_LONG, 0);
+	class_addmethod(c, (method)TextfileNext,		"next",		0);
+	class_addmethod(c, (method)TextfileNext,		"bang",		0);
+	
+    class_addmethod(c, (method)TextfileAssist,		"assist",	A_CANT,		0); 
 
 	class_register(_sym_box, c);
 	sTextfileClass = c;
@@ -42,24 +58,32 @@ int JAMOMA_EXPORT_MAXOBJ main(void)
 /************************************************************************************/
 // Object Creation Method
 
-void *JaTextfile_new(t_symbol *msg, long argc, t_atom *argv)
+void* TextfileNew(SymbolPtr msg, AtomCount ac, AtomPtr av)
 {
-	JaTextfile *x;
+	TextfilePtr	x;
 	 
-	x = (JaTextfile*)object_alloc(sTextfileClass);
+	x = (TextfilePtr)object_alloc(sTextfileClass);
 	if (x) {
+		x->lines = new TTList;
+		
 		//handle attribute args	
-    	attr_args_process(x, argc, argv); 
+    	attr_args_process(x, ac, av); 
     }
  	return (x);
+}
+
+
+void TextfileFree(TextfilePtr x)
+{
+	delete x->lines;
 }
 
 
 /************************************************************************************/
 // Methods bound to input/inlets
 
-// Method for Assistance Messages
-void JaTextfile_assist(JaTextfile *x, void *b, long msg, long arg, char *dst)
+
+void TextfileAssist(TextfilePtr x, void* b, long msg, long arg, char* dst)
 {
 	if (msg==1) { 		// Inlets
 		switch (arg) {
@@ -74,16 +98,37 @@ void JaTextfile_assist(JaTextfile *x, void *b, long msg, long arg, char *dst)
 }
 
 
-// METHOD: bang
-void JaTextfile_bang(JaTextfile *x)
+void	TextfileRead(SymbolPtr s, AtomCount ac, AtomPtr av)
 {
-	ObjectPtr	patcher = NULL;
-	ObjectPtr	patcherview = NULL;
-	
-	object_obex_lookup(x, gensym("#P"), &patcher);
-	if (patcher)
-		patcherview = object_attr_getobj(patcher, _sym_firstview);
-//		patcherview = jpatcher_get_firstview(patcher);
-	if (patcherview)
-		object_method(patcherview, _sym_select);
+	;
+}
+
+
+void	TextfileWrite(SymbolPtr s, AtomCount ac, AtomPtr av)
+{
+	;
+}
+
+
+void	TextfileOpen(TextfilePtr x)
+{
+	;
+}
+
+
+void	TextfileDump(TextfilePtr x)
+{
+	;
+}
+
+
+void	TextfileLine(TextfilePtr x, long i)
+{
+	;
+}
+
+
+void TextfileNext(TextfilePtr x)
+{
+	;
 }
