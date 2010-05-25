@@ -463,7 +463,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "multi.input~" ],
+					"args" : [ "input~" ],
 					"id" : "obj-52",
 					"lockeddragscroll" : 1,
 					"maxclass" : "bpatcher",
