@@ -20,6 +20,19 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-30",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"patching_rect" : [ 705.0, 160.0, 50.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -158,13 +171,12 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-13",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 390.0, 50.0, 29.0 ],
-					"text" : "/azi -41.52"
+					"patching_rect" : [ 255.0, 390.0, 50.0, 17.0 ],
+					"text" : "/azi 60."
 				}
 
 			}
