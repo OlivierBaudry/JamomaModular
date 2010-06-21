@@ -167,7 +167,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 270.0, 135.0, 147.0, 19.0 ],
-					"text" : "jcom.stereo2ambiControl 0"
+					"text" : "jcom.stereo2ambiControl 1"
 				}
 
 			}

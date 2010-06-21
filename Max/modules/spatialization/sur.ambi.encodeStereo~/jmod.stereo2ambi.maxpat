@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 202.0, 180.0, 1136.0, 570.0 ],
+		"rect" : [ 144.0, 57.0, 1291.0, 762.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 202.0, 180.0, 1136.0, 570.0 ],
+		"defrect" : [ 144.0, 57.0, 1291.0, 762.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -25,8 +25,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.0, 430.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 368.0, 430.0, 0.0, 0.0 ]
+					"patching_rect" : [ 370.0, 430.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -37,8 +36,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 430.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 334.0, 429.0, 0.0, 0.0 ]
+					"patching_rect" : [ 335.0, 430.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -133,7 +131,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 550.0, 120.0, 40.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.0, 75.0, 40.0, 19.0 ],
+					"presentation_rect" : [ 90.0, 75.0, 40.0, 19.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
 					"varname" : "Ramp"
@@ -149,26 +147,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 75.0, 65.0, 19.0 ],
+					"patching_rect" : [ 5.0, 75.0, 110.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 75.0, 65.0, 19.0 ],
-					"text" : "Ramp (ms)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
-					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-5",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 25.0, 106.0, 19.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 25.0, 106.0, 19.0 ],
-					"text" : "Common:"
+					"presentation_rect" : [ 5.0, 75.0, 110.0, 19.0 ],
+					"text" : "Ramp Int. (ms)"
 				}
 
 			}
@@ -183,8 +165,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 50.0, 84.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 50.0, 84.0, 19.0 ],
-					"text" : "DroppOff (dB):"
+					"presentation_rect" : [ 5.0, 55.0, 84.0, 19.0 ],
+					"text" : "Drop Off (dB):"
 				}
 
 			}
@@ -200,7 +182,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 550.0, 45.0, 40.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 50.0, 40.0, 19.0 ],
+					"presentation_rect" : [ 90.0, 55.0, 40.0, 19.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
 					"varname" : "DropOff"
@@ -218,7 +200,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 120.0, 65.0, 76.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.0, 65.0, 76.0, 19.0 ],
+					"presentation_rect" : [ 135.0, 75.0, 76.0, 19.0 ],
 					"text" : "Volume (dB):"
 				}
 
@@ -234,7 +216,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 130.0, 40.0, 56.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 130.0, 40.0, 56.0, 19.0 ],
+					"presentation_rect" : [ 135.0, 55.0, 56.0, 19.0 ],
 					"text" : "Distance:"
 				}
 
@@ -251,7 +233,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 550.0, 195.0, 40.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 65.0, 40.0, 19.0 ],
+					"presentation_rect" : [ 215.0, 75.0, 40.0, 19.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
 					"varname" : "0_Volume"
@@ -270,7 +252,7 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 550.0, 285.0, 40.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 40.0, 40.0, 19.0 ],
+					"presentation_rect" : [ 215.0, 55.0, 40.0, 19.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
 					"varname" : "0_Dist"
@@ -288,7 +270,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 573.0, 588.0, 40.0, 19.0 ],
+					"patching_rect" : [ 550.0, 535.0, 40.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 215.0, 35.0, 40.0, 19.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
 					"varname" : "0_Spread"
@@ -410,7 +394,7 @@
 					"outlinecolor" : [ 0.882353, 0.882353, 0.882353, 1.0 ],
 					"patching_rect" : [ 550.0, 400.0, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 250.0, 40.0, 40.0, 40.0 ],
+					"presentation_rect" : [ 255.0, 30.0, 40.0, 40.0 ],
 					"size" : 360.0,
 					"varname" : "0_Azi",
 					"vtracking" : 0
@@ -443,8 +427,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 573.0, 613.0, 612.0, 31.0 ],
-					"text" : "jcom.parameter 0_spread @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds -180 180 @range/clipmode both @description \"Descibes the spread of the stereo image.\"",
+					"patching_rect" : [ 550.0, 560.0, 554.0, 31.0 ],
+					"text" : "jcom.parameter spread @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds -180 180 @range/clipmode both @description \"Descibes the spread of the stereo image.\"",
 					"varname" : "jcom.parameter[5]"
 				}
 
@@ -518,7 +502,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 125.0, 20.0, 80.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.0, 20.0, 80.0, 19.0 ],
+					"presentation_rect" : [ 135.0, 35.0, 80.0, 19.0 ],
 					"text" : "Spread (deg):"
 				}
 
@@ -961,7 +945,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 582.5, 650.0, 566.0, 650.0, 566.0, 577.0, 582.5, 577.0 ],
+					"midpoints" : [ 559.5, 597.0, 543.0, 597.0, 543.0, 524.0, 559.5, 524.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
