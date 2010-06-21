@@ -27,9 +27,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 185.0, 51.0, 26.0, 17.0 ],
+					"patching_rect" : [ 185.0, 50.0, 27.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"attr_comment" : ""
+
 					}
 ,
 					"text" : "in 1"
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 185.0, 88.0, 83.0, 17.0 ],
+					"patching_rect" : [ 185.0, 90.0, 89.0, 19.0 ],
 					"text" : "jcom.pass ramp"
 				}
 
@@ -58,7 +58,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 230.0, 39.0, 17.0 ],
+					"patching_rect" : [ 105.0, 225.0, 43.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : [ "(signal)", "y-component" ]
 					}
@@ -75,7 +75,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 255.0, 39.0, 17.0 ],
+					"patching_rect" : [ 80.0, 250.0, 43.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : [ "(signal)", "x-component" ]
 					}
@@ -92,7 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 281.0, 39.0, 17.0 ],
+					"patching_rect" : [ 55.0, 275.0, 43.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : [ "(signal)", "w-component" ]
 					}
@@ -110,7 +110,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 124.0, 51.0, 33.0, 17.0 ],
+					"patching_rect" : [ 125.0, 50.0, 36.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : [ "(signal)", "Right" ]
 					}
@@ -128,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 57.0, 51.0, 33.0, 17.0 ],
+					"patching_rect" : [ 55.0, 50.0, 36.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : [ "(signal)", "Left" ]
 					}
@@ -146,7 +146,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 284.0, 116.0, 17.0 ],
+					"patching_rect" : [ 105.0, 275.0, 119.0, 19.0 ],
 					"text" : "(signal) w-component"
 				}
 
@@ -160,7 +160,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 256.0, 109.0, 17.0 ],
+					"patching_rect" : [ 130.0, 250.0, 117.0, 19.0 ],
 					"text" : "(signal) x-component"
 				}
 
@@ -174,7 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.0, 231.0, 109.0, 17.0 ],
+					"patching_rect" : [ 150.0, 225.0, 117.0, 19.0 ],
 					"text" : "(signal) y-component"
 				}
 
@@ -188,7 +188,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "list" ],
-					"patching_rect" : [ 57.0, 190.0, 77.0, 17.0 ],
+					"patching_rect" : [ 55.0, 185.0, 83.0, 19.0 ],
 					"text" : "matrix~ 2 3 1."
 				}
 
@@ -202,8 +202,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 256.0, 112.0, 139.0, 17.0 ],
-					"text" : "jmod.stereo2ambi_control 0"
+					"patching_rect" : [ 255.0, 125.0, 147.0, 19.0 ],
+					"text" : "jcom.stereo2ambiControl 0"
 				}
 
 			}
@@ -250,6 +250,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
