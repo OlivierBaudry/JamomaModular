@@ -5,12 +5,9 @@
 		xsi:schemaLocation='http://jamoma.org/ file:jamoma.xsd'
 >
   <preset number='1' name='default'>
-    <item name='azi' type='decimal' priority='0'>-5.000000</item>
-    <item name='distance' type='decimal' priority='0'>2.000000</item>
-    <item name='dropOff' type='decimal' priority='0'>3.000000</item>
-    <item name='gain' type='decimal' priority='0'>0.000000</item>
-    <item name='mute' type='boolean' priority='0'>0</item>
-    <item name='rampInterval' type='decimal' priority='0'>10.000000</item>
+    <item name='audio/gain' type='decimal' priority='0'>0.000000</item>
+    <item name='audio/mute' type='boolean' priority='0'>0</item>
+    <item name='rollOff' type='decimal' priority='0'>3.000000</item>
     <item name='spread' type='decimal' priority='0'>30.000000</item>
     <item name='view/color/border' type='array' priority='0'>0</item>
     <item name='view/color/contentBackground' type='array' priority='0'>0</item>
@@ -18,6 +15,5 @@
     <item name='view/color/toolbarText' type='array' priority='0'>0</item>
     <item name='view/freeze' type='boolean' priority='0'>0</item>
     <item name='view/size' type='array' priority='0'>300 105 </item>
-    <item name='volume' type='decimal' priority='0'>0.000000</item>
   </preset>
 </jamoma>
