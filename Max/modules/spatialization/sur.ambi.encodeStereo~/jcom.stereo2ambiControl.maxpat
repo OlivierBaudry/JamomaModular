@@ -723,7 +723,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 290.0, 260.0, 99.0, 29.0 ],
+									"patching_rect" : [ 290.0, 260.0, 102.0, 29.0 ],
 									"text" : "setcell 1 1 val $1, setcell 2 2 val $1"
 								}
 
@@ -1602,7 +1602,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 213.0, 193.0, 231.0, 43.0 ],
+									"patching_rect" : [ 213.0, 193.0, 234.0, 43.0 ],
 									"text" : "This section adds an offset to the in channel in case several stereo signals are routed to the same matrix~ for b-format encoding."
 								}
 
@@ -1749,7 +1749,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 639.5, 118.5, 429.5, 118.5 ],
+					"midpoints" : [ 639.5, 117.5, 429.5, 117.5 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
