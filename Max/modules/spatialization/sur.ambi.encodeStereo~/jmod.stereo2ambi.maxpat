@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 151.0, 113.0, 1136.0, 570.0 ],
+		"rect" : [ 202.0, 180.0, 1136.0, 570.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 151.0, 113.0, 1136.0, 570.0 ],
+		"defrect" : [ 202.0, 180.0, 1136.0, 570.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -26,8 +26,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.0, 155.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 353.0, 122.0, 0.0, 0.0 ]
+					"patching_rect" : [ 395.0, 155.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -39,8 +38,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 155.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 319.0, 119.0, 0.0, 0.0 ]
+					"patching_rect" : [ 350.0, 155.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -107,8 +105,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 550.0, 70.0, 415.0, 31.0 ],
-					"text" : "jcom.parameter #0_ drop_off @type msg_float @ramp 1 @repetitions 0 @range 0 12 @clipmode low @description \"Set drop-off in dB per unit distance.\"",
+					"patching_rect" : [ 550.0, 70.0, 558.0, 31.0 ],
+					"text" : "jcom.parameter dropOff @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds 0 12 @range/clipmode low @description \"Set drop-off in dB per unit distance.\"",
 					"varname" : "jcom.parameter[6]"
 				}
 
@@ -374,7 +372,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 550.0, 430.0, 75.0, 19.0 ],
+					"patching_rect" : [ 550.0, 445.0, 75.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontsize" : 10.0,
 						"fontname" : "Verdana",
@@ -400,7 +398,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"outlinecolor" : [ 0.882353, 0.882353, 0.882353, 1.0 ],
-					"patching_rect" : [ 550.0, 385.0, 40.0, 40.0 ],
+					"patching_rect" : [ 550.0, 400.0, 40.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 250.0, 40.0, 40.0, 40.0 ],
 					"size" : 360.0,
@@ -419,8 +417,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 550.0, 145.0, 385.0, 31.0 ],
-					"text" : "jcom.parameter #0_ ramp @type msg_float @ramp 0 @repetitions 0 @range 0. 200. @clipmode low @description \"Set ramp time for changes.\"",
+					"patching_rect" : [ 550.0, 145.0, 460.0, 31.0 ],
+					"text" : "jcom.parameter ramping @type decimal @ramp/drive none @repetitions/allow 0 @range/bounds 0. 200. @range/clipmode low @description \"Set ramp time for changes.\"",
 					"varname" : "jcom.parameter[1]"
 				}
 
@@ -436,7 +434,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 573.0, 613.0, 612.0, 31.0 ],
-					"text" : "jcom.parameter #0_ 0_spread @type msg_float @ramp 1 @repetitions 0 @range -180 180 @clipmode both @description \"Descibes the spread of the stereo image.\"",
+					"text" : "jcom.parameter 0_spread @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds -180 180 @range/clipmode both @description \"Descibes the spread of the stereo image.\"",
 					"varname" : "jcom.parameter[5]"
 				}
 
@@ -446,13 +444,13 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-17",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 550.0, 450.0, 528.0, 31.0 ],
-					"text" : "jcom.parameter #0_ 0_azi @type msg_float @ramp 1 @repetitions 0 @range -180 180 @clipmode none @description \"Azimuth. Rotates the localisation of the source in the horizontal plane.\"",
+					"patching_rect" : [ 550.0, 465.0, 587.0, 43.0 ],
+					"text" : "jcom.parameter azi @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds -180 180 @range/clipmode none @description \"Azimuth. Rotates the localisation of the source in the horizontal plane.\"",
 					"varname" : "jcom.parameter[4]"
 				}
 
@@ -580,8 +578,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 550.0, 220.0, 399.0, 43.0 ],
-					"text" : "jcom.parameter #0_ 0_volume @type msg_float @ramp 1 @repetitions 0 @range -90 0 @clipmode both @description \"Set volume. Used for adjusting the balance in modules with more than one stereo source signal.\"",
+					"patching_rect" : [ 550.0, 220.0, 595.0, 43.0 ],
+					"text" : "jcom.parameter volume @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds -90 0 @range/clipmode both @description \"Set volume. Used for adjusting the balance in modules with more than one stereo source signal.\"",
 					"varname" : "jcom.parameter[2]"
 				}
 
@@ -591,13 +589,13 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-40",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 550.0, 310.0, 484.0, 31.0 ],
-					"text" : "jcom.parameter #0_ 0_distance @type msg_float @ramp 1 @repetitions 0 @range -1 20 @clipmode low @description \"Distance from center. Cause roll-of as the source moves away.\"",
+					"patching_rect" : [ 550.0, 310.0, 597.0, 43.0 ],
+					"text" : "jcom.parameter distance @type decimal @ramp/drive scheduler @ramp/function linear @repetitions/allow 0 @range/bounds -1 20 @range/clipmode low @description \"Distance from center. Cause roll-of as the source moves away.\"",
 					"varname" : "jcom.parameter[3]"
 				}
 
@@ -868,7 +866,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 550.0, 360.0, 75.0, 19.0 ],
+					"patching_rect" : [ 550.0, 375.0, 75.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontsize" : 10.0,
 						"fontname" : "Verdana",
@@ -977,7 +975,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 559.5, 487.0, 543.0, 487.0, 543.0, 350.0, 559.5, 350.0 ],
+					"midpoints" : [ 559.5, 514.0, 543.0, 514.0, 543.0, 365.0, 559.5, 365.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1130,7 +1128,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 559.5, 344.0, 543.0, 344.0, 543.0, 278.0, 559.5, 278.0 ],
+					"midpoints" : [ 559.5, 357.0, 543.0, 357.0, 543.0, 278.0, 559.5, 278.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
