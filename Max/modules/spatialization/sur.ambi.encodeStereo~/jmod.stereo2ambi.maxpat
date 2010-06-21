@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 40.0, 50.0, 1109.0, 404.0 ],
+		"rect" : [ 151.0, 113.0, 1109.0, 404.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 40.0, 50.0, 1109.0, 404.0 ],
+		"defrect" : [ 151.0, 113.0, 1109.0, 404.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -26,11 +26,11 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 511.0, 40.0, 374.0, 28.0 ],
-					"text" : "jmod.parameter.mxt #0_ drop_off @type msg_float @ramp 1 @repetitions 0 @range 0 12 @clipmode low @description \"Set drop-off in dB per unit distance.\"",
-					"varname" : "jmod.parameter[6]"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 511.0, 40.0, 415.0, 31.0 ],
+					"text" : "jcom.parameter #0_ drop_off @type msg_float @ramp 1 @repetitions 0 @range 0 12 @clipmode low @description \"Set drop-off in dB per unit distance.\"",
+					"varname" : "jcom.parameter[6]"
 				}
 
 			}
@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 436.0, 40.0, 69.0, 17.0 ],
+					"patching_rect" : [ 436.0, 40.0, 74.0, 19.0 ],
 					"text" : "pvar DropOff"
 				}
 
@@ -62,7 +62,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 75.0, 45.0, 40.0, 17.0 ],
+					"patching_rect" : [ 75.0, 45.0, 40.0, 19.0 ],
 					"textcolor" : [ 0.776471, 0.776471, 0.776471, 1.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
@@ -79,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 46.0, 59.0, 17.0 ],
+					"patching_rect" : [ 5.0, 46.0, 65.0, 19.0 ],
 					"text" : "Ramp (ms)",
 					"textcolor" : [ 0.67451, 0.67451, 0.67451, 1.0 ]
 				}
@@ -94,7 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 18.0, 106.0, 17.0 ],
+					"patching_rect" : [ 5.0, 18.0, 106.0, 19.0 ],
 					"text" : "Common:",
 					"textcolor" : [ 0.67451, 0.67451, 0.67451, 1.0 ]
 				}
@@ -109,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 32.0, 77.0, 17.0 ],
+					"patching_rect" : [ 5.0, 32.0, 84.0, 19.0 ],
 					"text" : "DroppOff (dB):",
 					"textcolor" : [ 0.67451, 0.67451, 0.67451, 1.0 ]
 				}
@@ -129,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 75.0, 30.0, 40.0, 17.0 ],
+					"patching_rect" : [ 75.0, 30.0, 40.0, 19.0 ],
 					"textcolor" : [ 0.776471, 0.776471, 0.776471, 1.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
@@ -146,7 +146,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 111.0, 47.0, 70.0, 17.0 ],
+					"patching_rect" : [ 111.0, 47.0, 76.0, 19.0 ],
 					"text" : "Volume (dB):",
 					"textcolor" : [ 0.67451, 0.67451, 0.67451, 1.0 ]
 				}
@@ -161,7 +161,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 111.0, 33.0, 55.0, 17.0 ],
+					"patching_rect" : [ 111.0, 33.0, 56.0, 19.0 ],
 					"text" : "Distance:",
 					"textcolor" : [ 0.67451, 0.67451, 0.67451, 1.0 ]
 				}
@@ -181,7 +181,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 178.0, 45.0, 40.0, 17.0 ],
+					"patching_rect" : [ 178.0, 45.0, 40.0, 19.0 ],
 					"textcolor" : [ 0.776471, 0.776471, 0.776471, 1.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
@@ -203,7 +203,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 178.0, 31.0, 40.0, 17.0 ],
+					"patching_rect" : [ 178.0, 31.0, 40.0, 19.0 ],
 					"textcolor" : [ 0.776471, 0.776471, 0.776471, 1.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
@@ -226,7 +226,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 178.0, 17.0, 40.0, 17.0 ],
+					"patching_rect" : [ 178.0, 17.0, 40.0, 19.0 ],
 					"textcolor" : [ 0.776471, 0.776471, 0.776471, 1.0 ],
 					"triangle" : 0,
 					"triscale" : 0.9,
@@ -271,7 +271,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.0, 69.0, 122.0, 17.0 ],
+									"patching_rect" : [ 59.0, 69.0, 130.0, 19.0 ],
 									"text" : "scale 0. 360. 180. -180."
 								}
 
@@ -321,7 +321,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 522.0, 179.0, 68.0, 17.0 ],
+					"patching_rect" : [ 522.0, 179.0, 75.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontsize" : 10.0,
 						"fontname" : "Verdana",
@@ -362,11 +362,11 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 511.0, 86.0, 348.0, 28.0 ],
-					"text" : "jmod.parameter.mxt #0_ ramp @type msg_float @ramp 0 @repetitions 0 @range 0. 200. @clipmode low @description \"Set ramp time for changes.\"",
-					"varname" : "jmod.parameter[1]"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 511.0, 86.0, 385.0, 31.0 ],
+					"text" : "jcom.parameter #0_ ramp @type msg_float @ramp 0 @repetitions 0 @range 0. 200. @clipmode low @description \"Set ramp time for changes.\"",
+					"varname" : "jcom.parameter[1]"
 				}
 
 			}
@@ -378,11 +378,11 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 436.0, 285.0, 612.0, 28.0 ],
-					"text" : "jmod.parameter.mxt #0_ 0_spread @type msg_float @ramp 1 @repetitions 0 @range -180 180 @clipmode both @description \"Descibes the spread of the stereo image.\"",
-					"varname" : "jmod.parameter[5]"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 436.0, 285.0, 612.0, 31.0 ],
+					"text" : "jcom.parameter #0_ 0_spread @type msg_float @ramp 1 @repetitions 0 @range -180 180 @clipmode both @description \"Descibes the spread of the stereo image.\"",
+					"varname" : "jcom.parameter[5]"
 				}
 
 			}
@@ -394,11 +394,11 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.0, 246.0, 526.0, 28.0 ],
-					"text" : "jmod.parameter.mxt #0_ 0_azi @type msg_float @ramp 1 @repetitions 0 @range -180 180 @clipmode none @description \"Azimuth. Rotates the localisation of the source in the horizontal plane.\"",
-					"varname" : "jmod.parameter[4]"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 522.0, 246.0, 528.0, 31.0 ],
+					"text" : "jcom.parameter #0_ 0_azi @type msg_float @ramp 1 @repetitions 0 @range -180 180 @clipmode none @description \"Azimuth. Rotates the localisation of the source in the horizontal plane.\"",
+					"varname" : "jcom.parameter[4]"
 				}
 
 			}
@@ -411,7 +411,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 436.0, 86.0, 58.0, 17.0 ],
+					"patching_rect" : [ 436.0, 86.0, 63.0, 19.0 ],
 					"text" : "pvar Ramp"
 				}
 
@@ -425,7 +425,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 608.0, 133.0, 64.0, 17.0 ],
+					"patching_rect" : [ 608.0, 133.0, 67.0, 19.0 ],
 					"text" : "pvar 0_Dist"
 				}
 
@@ -439,7 +439,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.0, 155.0, 61.0, 17.0 ],
+					"patching_rect" : [ 522.0, 155.0, 62.0, 19.0 ],
 					"text" : "pvar 0_Azi"
 				}
 
@@ -453,7 +453,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 436.0, 133.0, 77.0, 17.0 ],
+					"patching_rect" : [ 436.0, 133.0, 83.0, 19.0 ],
 					"text" : "pvar 0_Spread"
 				}
 
@@ -474,29 +474,14 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
-					"id" : "obj-23",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 76.0, 297.0, 65.0, 26.0 ],
-					"text" : ";\rmax refresh"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
 					"id" : "obj-24",
-					"linecount" : 5,
+					"linecount" : 3,
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 0.0, 140.0, 173.0, 61.0 ],
-					"text" : "jmod.hub #0_ stereo2ambi_1~ @size 1U-half @module_type audio @num_inputs 2 @num_outputs 3 @description \"Encode stereo signal as 1st order ambisonic signal\"",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 0.0, 140.0, 334.0, 43.0 ],
+					"text" : "jcom.hub #0_ stereo2ambi_1~ @size 1U-half @module_type audio @num_inputs 2 @num_outputs 3 @description \"Encode stereo signal as 1st order ambisonic signal\"",
 					"varname" : "jmod.hub"
 				}
 
@@ -510,7 +495,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 121.0, 79.0, 17.0 ],
+					"patching_rect" : [ 14.0, 121.0, 87.0, 19.0 ],
 					"text" : "command input"
 				}
 
@@ -524,44 +509,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 0.0, 121.0, 13.0, 13.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
-					"id" : "obj-27",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 76.0, 265.0, 74.0, 26.0 ],
-					"text" : ";\rjmod.init bang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
-					"id" : "obj-28",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 173.0, 140.0, 82.0, 39.0 ],
-					"saved_object_attributes" : 					{
-						"client_rect" : [ 0, 0, 640, 240 ],
-						"storage_rect" : [ 0, 0, 640, 240 ],
-						"paraminitmode" : 0,
-						"parameter_enable" : 0
-					}
-,
-					"text" : "pattrstorage @autorestore 0 @savemode 0",
-					"varname" : "u981002877"
 				}
 
 			}
@@ -612,7 +559,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 111.0, 19.0, 72.0, 17.0 ],
+					"patching_rect" : [ 111.0, 19.0, 80.0, 19.0 ],
 					"text" : "Spread (deg):",
 					"textcolor" : [ 0.67451, 0.67451, 0.67451, 1.0 ]
 				}
@@ -627,7 +574,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 265.0, 221.0, 131.0, 28.0 ],
+					"patching_rect" : [ 265.0, 221.0, 140.0, 31.0 ],
 					"text" : "poly~ jmod.stereo2ambi_1~.alg"
 				}
 
@@ -642,7 +589,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, -30.0, 105.0, 17.0 ],
+					"patching_rect" : [ 15.0, -30.0, 108.0, 19.0 ],
 					"text" : "----signal inputs----"
 				}
 
@@ -680,7 +627,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 82.0, 101.0, 17.0 ],
+					"patching_rect" : [ 122.0, 82.0, 107.0, 19.0 ],
 					"text" : "---signal outputs---"
 				}
 
@@ -693,11 +640,11 @@
 					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 694.0, 156.0, 357.0, 39.0 ],
-					"text" : "jmod.parameter.mxt #0_ 0_volume @type msg_float @ramp 1 @repetitions 0 @range -90 0 @clipmode both @description \"Set volume. Used for adjusting the balance in modules with more than one stereo source signal.\"",
-					"varname" : "jmod.parameter[2]"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 694.0, 156.0, 399.0, 43.0 ],
+					"text" : "jcom.parameter #0_ 0_volume @type msg_float @ramp 1 @repetitions 0 @range -90 0 @clipmode both @description \"Set volume. Used for adjusting the balance in modules with more than one stereo source signal.\"",
+					"varname" : "jcom.parameter[2]"
 				}
 
 			}
@@ -710,7 +657,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 694.0, 133.0, 78.0, 17.0 ],
+					"patching_rect" : [ 694.0, 133.0, 85.0, 19.0 ],
 					"text" : "pvar 0_Volume"
 				}
 
@@ -723,11 +670,11 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 608.0, 207.0, 440.0, 28.0 ],
-					"text" : "jmod.parameter.mxt #0_ 0_distance @type msg_float @ramp 1 @repetitions 0 @range -1 20 @clipmode low @description \"Distance from center. Cause roll-of as the source moves away.\"",
-					"varname" : "jmod.parameter[3]"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 608.0, 207.0, 484.0, 31.0 ],
+					"text" : "jcom.parameter #0_ 0_distance @type msg_float @ramp 1 @repetitions 0 @range -1 20 @clipmode low @description \"Distance from center. Cause roll-of as the source moves away.\"",
+					"varname" : "jcom.parameter[3]"
 				}
 
 			}
@@ -768,7 +715,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 52.0, 251.0, 62.0, 17.0 ],
+									"patching_rect" : [ 52.0, 251.0, 68.0, 19.0 ],
 									"text" : "prepend set"
 								}
 
@@ -782,7 +729,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 52.0, 99.0, 51.0, 17.0 ],
+									"patching_rect" : [ 52.0, 99.0, 54.0, 19.0 ],
 									"text" : "route set"
 								}
 
@@ -796,7 +743,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 52.0, 228.0, 122.0, 17.0 ],
+									"patching_rect" : [ 52.0, 228.0, 130.0, 19.0 ],
 									"text" : "scale 180. -180. 0. 360."
 								}
 
@@ -810,7 +757,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 130.0, 198.0, 39.0, 17.0 ],
+									"patching_rect" : [ 130.0, 198.0, 39.0, 19.0 ],
 									"text" : "- 360."
 								}
 
@@ -824,7 +771,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "float" ],
-									"patching_rect" : [ 130.0, 174.0, 78.0, 17.0 ],
+									"patching_rect" : [ 130.0, 174.0, 82.0, 19.0 ],
 									"text" : "split 180. 360."
 								}
 
@@ -838,7 +785,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 52.0, 176.0, 40.0, 17.0 ],
+									"patching_rect" : [ 52.0, 176.0, 43.0, 19.0 ],
 									"text" : "+ 360."
 								}
 
@@ -852,7 +799,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "float" ],
-									"patching_rect" : [ 52.0, 149.0, 88.0, 17.0 ],
+									"patching_rect" : [ 52.0, 149.0, 91.0, 19.0 ],
 									"text" : "split -360. -180."
 								}
 
@@ -866,7 +813,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 52.0, 125.0, 43.0, 17.0 ],
+									"patching_rect" : [ 52.0, 125.0, 45.0, 19.0 ],
 									"text" : "% 360."
 								}
 
@@ -935,7 +882,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"hidden" : 0,
-									"midpoints" : [ 198.5, 221.0, 61.5, 221.0 ],
+									"midpoints" : [ 202.5, 221.0, 61.5, 221.0 ],
 									"source" : [ "obj-5", 1 ]
 								}
 
@@ -997,7 +944,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 522.0, 133.0, 68.0, 17.0 ],
+					"patching_rect" : [ 522.0, 133.0, 75.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontsize" : 10.0,
 						"fontname" : "Verdana",
@@ -1014,15 +961,15 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#0_" ],
+					"has_gain" : 1,
+					"has_meters" : 1,
+					"has_mute" : 1,
 					"id" : "obj-42",
-					"lockeddragscroll" : 1,
-					"maxclass" : "bpatcher",
-					"name" : "jmod.gui.mxt",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 256.0, 60.0 ],
-					"varname" : "jmod.gui.1Uh.a.stereo.mxt"
+					"maxclass" : "jcom.ui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"text" : "/editing_this_module"
 				}
 
 			}
@@ -1119,18 +1066,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ],
-					"source" : [ "obj-24", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 86.5, 211.0, 274.5, 211.0 ],
+					"midpoints" : [ 324.5, 211.0, 274.5, 211.0 ],
 					"source" : [ "obj-24", 1 ]
 				}
 
@@ -1150,15 +1088,6 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
-					"hidden" : 0,
-					"midpoints" : [  ],
-					"source" : [ "obj-28", 0 ]
 				}
 
 			}
