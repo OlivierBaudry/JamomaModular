@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 93.0, 100.0, 809.0, 544.0 ],
+		"rect" : [ 472.0, 109.0, 809.0, 544.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 93.0, 100.0, 809.0, 544.0 ],
+		"defrect" : [ 472.0, 109.0, 809.0, 544.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -221,7 +221,7 @@
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
 					"patching_rect" : [ 50.0, 85.0, 313.0, 19.0 ],
-					"text" : "route /spread /azi /distance /drop_off /volume"
+					"text" : "jcom.oscroute /spread /azi /distance /dropOff /volume"
 				}
 
 			}

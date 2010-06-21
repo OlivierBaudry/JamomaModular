@@ -36,8 +36,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 90.0, 250.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 94.0, 250.0, 0.0, 0.0 ]
+					"patching_rect" : [ 90.0, 250.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -60,8 +59,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 40.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 414.0, 46.0, 0.0, 0.0 ]
+					"patching_rect" : [ 95.0, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -73,8 +71,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.0, 40.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 374.0, 45.0, 0.0, 0.0 ]
+					"patching_rect" : [ 55.0, 40.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -99,8 +96,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 160.0, 100.0, 89.0, 19.0 ],
-					"text" : "jcom.pass ramp"
+					"patching_rect" : [ 160.0, 100.0, 130.0, 19.0 ],
+					"text" : "jcom.pass rampInterval"
 				}
 
 			}
@@ -169,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 135.0, 147.0, 19.0 ],
+					"patching_rect" : [ 270.0, 135.0, 147.0, 19.0 ],
 					"text" : "jcom.stereo2ambiControl 0"
 				}
 
